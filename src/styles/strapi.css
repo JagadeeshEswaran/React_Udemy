@@ -1,0 +1,275 @@
+/* .testClass {
+	background: #000;
+} */
+
+.main_container {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	/* border: 1px dotted red; */
+}
+
+/* 
+=====================
+Navbar
+=====================
+*/
+
+.strapi-navbar {
+	width: 97%;
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+
+	background: #0c335f98;
+	border-radius: 5%;
+
+	/* border: 1px dotted red; */
+
+	padding: 0 2rem;
+	margin: 0 1rem;
+
+	height: 5rem;
+}
+
+.h1-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.logo {
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	font-weight: 700;
+}
+
+.toggle-btn {
+	cursor: pointer;
+
+	background-color: transparent;
+	color: #fff;
+	width: 2rem;
+	height: 2rem;
+	border-color: none;
+	border-radius: 15%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.toggle-btn:hover {
+	transform: scale(1.05);
+	background: rgba(35, 118, 241, 0.5);
+}
+
+/* 
+=====================
+Hero
+=====================
+*/
+.hero_container {
+	min-height: calc(95% - 5rem);
+	display: grid;
+	place-items: center;
+	width: 100%;
+}
+
+.hero-center {
+	color: #fff;
+	width: 92%;
+	max-width: 95%;
+}
+
+.hero-center h1 {
+	font-size: clamp(4rem, 4vw, 8rem);
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.hero-center p {
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 990px) {
+	/* .toggle-btn {
+		display: none;
+	} */
+}
+
+/* 
+=====================
+Sidebar
+=====================
+*/
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(134, 185, 230, 0.95);
+
+	border-radius: 1.3%;
+}
+
+.sidebar-container {
+	padding: 4rem 2rem;
+	position: relative;
+}
+
+.close-btn {
+	font-size: 1.5rem;
+	background: transparent;
+	border: transparent;
+
+	color: aqua;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 1rem;
+	right: 1.5rem;
+}
+
+.sidebar article {
+	margin-bottom: 2rem;
+}
+
+.sidebar h5 {
+	margin-bottom: 1rem;
+	color: steelblue;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.sidebar-sublink {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 0.75rem;
+}
+
+.sidebar-sublink a {
+	text-decoration: none;
+	color: whitesmoke;
+	text-transform: capitalize;
+}
+
+.sidebar-sublink a:hover {
+	color: steelblue;
+}
+
+.sidebar-sublink span,
+.submenu-links span {
+	color: aqua;
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+}
+
+/* 
+=====================
+Nav-Links
+=====================
+*/
+.nav-links {
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	gap: 1rem;
+}
+
+.nav-links button {
+	padding: 0;
+	margin: 0;
+}
+
+.strapi-nav-link {
+	border: 1px dotted red;
+
+	background: transparent;
+	font-size: 1.25rem;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	text-transform: capitalize;
+	margin: 0 !important;
+	align-self: stretch;
+	justify-self: stretch;
+	border: none;
+
+	display: grid;
+	gap: 1rem;
+
+	color: aliceblue;
+
+	/* border: 1px dotted red; */
+}
+
+/* 
+=====================
+Submenu Links
+=====================
+*/
+.subMenu {
+	display: none;
+	opacity: 0;
+
+	/* border-radius: 2%; */
+}
+
+.show-submenu {
+	/* visibility: visible; */
+	display: block;
+
+	position: fixed;
+	top: 9rem;
+	right: 0%;
+	width: 70%;
+
+	padding: 3rem;
+
+	/* From https://css.glass */
+	background: rgba(76, 89, 225, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(50px);
+	-webkit-backdrop-filter: blur(50px);
+
+	transform: translateX(-20%);
+	visibility: visible;
+
+	transform-origin: bottom;
+	perspective: 100px;
+
+	transition: transform 0.2s ease-in-out, opacity 0.1s ease-in;
+}
+
+.submenu h5 {
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.submenu-links {
+	display: grid;
+	cursor: pointer;
+	row-gap: 0.75rem;
+
+	font-size: 1rem;
+}
