@@ -39,6 +39,8 @@ import ReactMemo_Main from "./components/React_Fundamentals/Performance/ReactMem
 import UseCallback_Hook_Main from "./components/React_Fundamentals/Performance/03_useCallback_Hook/UseCallback_Hook_Main";
 import USeMemo_Hook_main from "./components/React_Fundamentals/Performance/04_useMemo_Hook/USeMemo_Hook_main";
 import UseTransition_Hook_main from "./components/React_Fundamentals/Performance/05_useTransition_Hook/UseTransition_Hook_main";
+import TandL_Main from "./components/Tools&Libraries/TandL_Main";
+import Axios_Main from "./components/Tools&Libraries/axios/Axios_Main";
 
 const App = () => {
 	return (
@@ -231,6 +233,12 @@ const App = () => {
 							path="/exotic_landscapes"
 							element={<Navigate to="https://exotic-landscapes.netlify.app/" />}
 						/> */}
+
+						{/* *********************          React Tools & Libraries            ******************************* */}
+						<Route path="/tools&libraries" element={<TandL_Main />} />
+
+						{/* Axios Library */}
+						<Route path="/tools&libraries/axios" element={<Axios_Main />} />
 					</Routes>
 				</div>
 

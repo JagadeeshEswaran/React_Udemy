@@ -79,3 +79,27 @@ export const UseTransition_Hook_notes = [
 		],
 	},
 ];
+
+export const Axios_Notes = [
+	{
+		id: 1,
+		title: "Installation",
+		pointers: [
+			"Axios Docs -- (https://axios-http.com/docs/intro)",
+			"command : npm install axios",
+			"For VenillaJS : <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>",
+			"To use axios in your project, use -> import axios from 'axios'",
+			"Import methods : => axios.get(), => axios.post(), => axios.patch/put(), => axios.delete()",
+			"By default, it will be Get",
+		],
+	},
+	{
+		id: 2,
+		title: "Functionalities",
+		pointers: [
+			"Generally returns a promise",
+			"Needed data will be located in response.data",
+			"Error will be in error.message",
+		],
+	},
+];

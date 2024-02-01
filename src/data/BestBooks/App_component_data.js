@@ -127,7 +127,16 @@ export const Side_bar_Data = [
 	},
 	{
 		id: 4,
-		name: " ",
+		name: "Tools & Libraries",
+		link: "/tools&libraries",
+		sub_secition: [
+			{
+				id: 1,
+				name: "axios",
+				icon: "https://www.vectorlogo.zone/logos/axios/axios-icon.svg",
+				link: "/tools&libraries/axios",
+			},
+		],
 	},
 	{
 		id: 5,

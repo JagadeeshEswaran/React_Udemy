@@ -62,3 +62,12 @@ body,
 .cardBtn:hover {
 	background: lightseagreen;
 }
+
+.myIcon {
+	/* border: 1px dotted red;
+	color: aqua !important; */
+}
+
+.myIcon:hover {
+	color: aqua !important;
+}
