@@ -168,6 +168,38 @@ export const RF_Data = [
 		name: "Context API",
 		link: "/react_fundamentals/context_api",
 	},
+	{
+		id: 3,
+		name: "Performance",
+		link: "/react_fundamentals/app_performance",
+		topics: [
+			{
+				id: 1,
+				name: "Lower the State",
+				link: "/react_fundamentals/app_performance/lower_state",
+			},
+			{
+				id: 2,
+				name: "React.memo()",
+				link: "/react_fundamentals/app_performance/react_memo",
+			},
+			{
+				id: 3,
+				name: "UseCallback ",
+				link: "/react_fundamentals/app_performance/useCallback_hook",
+			},
+			{
+				id: 4,
+				name: "useMemo",
+				link: "/react_fundamentals/app_performance/useMemo_hook",
+			},
+			{
+				id: 5,
+				name: "useTransition",
+				link: "/react_fundamentals/app_performance/useTransition_hook",
+			},
+		],
+	},
 ];
 
 export const React_Hooks = [
@@ -256,6 +288,21 @@ export const React_Hooks = [
 			// 	link: "react_hooks/challenges/users_challenge",
 			// },
 		],
+	},
+	{
+		id: 8,
+		name: "UseCallback ",
+		link: "/react_fundamentals/app_performance/useCallback_hook",
+	},
+	{
+		id: 9,
+		name: "useMemo",
+		link: "/react_fundamentals/app_performance/useMemo_hook",
+	},
+	{
+		id: 10,
+		name: "useTransition",
+		link: "/react_fundamentals/app_performance/useTransition_hook",
 	},
 	{
 		id: 3,

@@ -53,3 +53,29 @@ export const useReducer_hook = [
 		],
 	},
 ];
+
+export const React_Memo_note = [
+	{
+		id: 1,
+		pointers: [
+			"In Example 2, Double click on a name or remove button to Remove it.",
+			"But, notice we're re-rendering the whole component even if We've memoized the List Component",
+			"Why we're re-rendering memoized component, while we're not changing its prop or state",
+			"Notice the removePerson function, Whenever a component re-renders functions wihtin the function will get create from scratch",
+			"This causes the re-render, since everytime removePerson prop will be newer",
+		],
+	},
+];
+
+export const UseTransition_Hook_notes = [
+	{
+		id: 1,
+		pointers: [
+			"useTransition just allows us to mark certain functionality as less urgent",
+			"Which in turn prevents the whole UI blocking thing.",
+			"In the First tab, you can notice user Input was not rendering properly since onChange event triggers some function in the background",
+			"But, In second tab, you can notice user can type smoothly since it's regardless of the function which runs in the background.",
+			"Ex.: API Call, Huge Calculation, etc.",
+		],
+	},
+];

@@ -12,7 +12,7 @@ const Side_bar = ({ data }) => {
 				height: "86vh",
 			}}>
 			<ul className="p-0">
-				{data.map((item) => (
+				{data?.map((item) => (
 					<li
 						className="py-4 fw-bold text-primary-emphasis cursor-pointer"
 						key={item.id}>

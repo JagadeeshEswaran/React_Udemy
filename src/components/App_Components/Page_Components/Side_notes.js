@@ -2,7 +2,8 @@
 import React from "react";
 
 const Side_notes = ({ notes }) => {
-	// console.log(notes[0].pointers);
+	console.log(notes);
+
 	return (
 		<div
 			className="card col-2 d-flex flex-column align-items-center sideNote txtClr py-3"
@@ -13,11 +14,19 @@ const Side_notes = ({ notes }) => {
 
 			<ul className="p-0">
 				{notes &&
-					notes[0].pointers.map((item, idx) => (
+					notes[0]?.pointers.map((item, idx) => (
 						<li
 							className="py-2 fw-bold text-info"
 							key={idx}
 							style={{ fontSize: "0.8rem" }}>
+							<span
+								style={{
+									color: "yellow",
+									background: "yellow",
+									borderRadius: "50%",
+								}}>
+								=&gt;
+							</span>{" "}
 							{item}
 						</li>
 					))}

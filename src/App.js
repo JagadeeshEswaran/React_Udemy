@@ -33,6 +33,12 @@ import AppContext from "./AppContext";
 import Sidebar_App_Main from "./React_Micro_Projects/12_Sidebar_Modal_App/Sidebar_App_Main";
 import Strapi_App_Main from "./React_Micro_Projects/13_Strapi_Menubar/Strapi_App_Main";
 import UseReducer_Hook_Main from "./components/React_Hooks/UseReducer_Hook/UserReducer_Hook_Main";
+import Performance_Main from "./components/React_Fundamentals/Performance/Performance_Main";
+import LowerState from "./components/React_Fundamentals/Performance/01_Lower_State/LowerState";
+import ReactMemo_Main from "./components/React_Fundamentals/Performance/ReactMemo/ReactMemo_Main";
+import UseCallback_Hook_Main from "./components/React_Fundamentals/Performance/03_useCallback_Hook/UseCallback_Hook_Main";
+import USeMemo_Hook_main from "./components/React_Fundamentals/Performance/04_useMemo_Hook/USeMemo_Hook_main";
+import UseTransition_Hook_main from "./components/React_Fundamentals/Performance/05_useTransition_Hook/UseTransition_Hook_main";
 
 const App = () => {
 	return (
@@ -51,32 +57,70 @@ const App = () => {
 					<Routes className="container-fluid d-flex justify-content-center row m-0 w-100">
 						<Route path="/" element={<Home />} />
 
-						{/* React Fundamentals Route */}
+						{/* *********************       React Fundamentals Route        ******************************* */}
 						<Route path="/react_fundamentals" element={<RF_App_Container />} />
 
-						{/* React Fundamentals - Content */}
+						{/* React Fundamentals - Context */}
 						<Route
 							path="/react_fundamentals/context_api"
 							element={<Context_API_Main />}
 						/>
 
+						{/* React Fundamentals - Perf */}
+						<Route
+							path="/react_fundamentals/app_performance"
+							element={<Performance_Main />}
+						/>
+
+						<Route
+							path="/react_fundamentals/app_performance/lower_state"
+							element={<LowerState />}
+						/>
+
+						<Route
+							path="/react_fundamentals/app_performance/react_memo"
+							element={<ReactMemo_Main />}
+						/>
+
+						<Route
+							path="/react_fundamentals/app_performance/useCallback_hook"
+							element={<UseCallback_Hook_Main />}
+						/>
+
+						<Route
+							path="/react_fundamentals/app_performance/useMemo_hook"
+							element={<USeMemo_Hook_main />}
+						/>
+
+						<Route
+							path="/react_fundamentals/app_performance/useTransition_hook"
+							element={<UseTransition_Hook_main />}
+						/>
+
 						{/* <Route path="/react_fundamentals" element={<Context_API_Main />} /> */}
 
-						{/* React Hooks Route */}
+						{/* *********************          React Hooks Route            ******************************* */}
 						<Route path="/react_hooks" element={<Main_React_Hooks />} />
+
+						{/* useState Hook */}
 						<Route
 							path="/react_hooks/useState_hook"
 							element={<UseState_Hooks />}
 						/>
+
+						{/* useEffect Hook */}
 						<Route
 							path="/react_hooks/useEffect_hook"
 							element={<UseEffect_Hook />}
 						/>
 
+						{/* useref Hook */}
 						<Route
 							path="/react_hooks/useRef_hook"
 							element={<UseRef_Hook_Main />}
 						/>
+
+						{/* *********************          React Custom Hooks           ******************************* */}
 
 						{/* Custom Hooks Route */}
 						<Route
@@ -114,7 +158,7 @@ const App = () => {
 							element={<Hooks_Challenges />}
 						/>
 
-						{/* React Micro Apps Route */}
+						{/* *********************          React Micro Apps Route           ******************************* */}
 						<Route path="/react_micro_apps" element={<Micro_Apps_Main />} />
 
 						<Route
