@@ -33,11 +33,11 @@ const About_Headers = () => {
 
 	useEffect(() => {
 		if (!flag) {
-			alert(joke);
+			// alert(joke);
 			setFlag(!flag);
 		}
 
-		alert(joke);
+		// alert(joke);
 	}, [joke]);
 
 	return (

@@ -12,7 +12,7 @@ export const URL3 = "https://course-api.com/axios-tutorial-post";
 
 const Axios_Container = () => {
 	return (
-		<>
+		<div style={{ marginBottom: "7vh" }}>
 			<First_Request />
 
 			<About_Headers />
@@ -24,7 +24,7 @@ const Axios_Container = () => {
 			<Custom_Instances />
 
 			<Interceptors />
-		</>
+		</div>
 	);
 };
 

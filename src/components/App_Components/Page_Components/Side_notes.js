@@ -1,7 +1,9 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from "react";
 
-const Side_notes = ({ notes }) => {
+const Side_notes = ({ notes, title, icon }) => {
 	// console.log(notes);
 
 	return (
@@ -10,15 +12,17 @@ const Side_notes = ({ notes }) => {
 			style={{
 				height: "86vh",
 			}}>
-			<h6>Notes</h6>
+			<h6>{title || "Notes"}</h6>
 
 			<div className="d-flex flex-column justify-content-start w-100">
 				{notes?.map((note) => (
+					// console.log(note)
+
 					<>
-						<h6 key={note?.id}>{note.title}</h6>
+						{note.title && <h6 key={note?.id}>{note?.title}</h6>}
 
 						<ul className="p-0" key={note.id}>
-							{notes &&
+							{note.pointers ? (
 								note?.pointers?.map((item, idx) => (
 									<li
 										className="py-2 ps-2 fw-bold text-info"
@@ -30,11 +34,18 @@ const Side_notes = ({ notes }) => {
 												background: "yellow",
 												borderRadius: "50%",
 											}}>
-											=&gt;
+											{icon || "=&gt;"}
 										</span>{" "}
 										{item}
 									</li>
-								))}
+								))
+							) : (
+								<li
+									className="py-2 ps-2 fw-bold text-info"
+									style={{ fontSize: "0.8rem" }}>
+									<span>{icon || "=>"}</span> {note}
+								</li>
+							)}
 						</ul>
 					</>
 				))}

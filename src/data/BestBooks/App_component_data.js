@@ -4,6 +4,8 @@ import {
 	FaSquareInstagram,
 } from "react-icons/fa6";
 
+import react_query_icon from "../../assets/Tool&Libraries/react_query/react-query-icon.svg";
+
 export const Navbar_Data = [
 	{
 		id: 1,
@@ -135,6 +137,12 @@ export const Side_bar_Data = [
 				name: "axios",
 				icon: "https://www.vectorlogo.zone/logos/axios/axios-icon.svg",
 				link: "/tools&libraries/axios",
+			},
+			{
+				id: 2,
+				name: "React Query",
+				icon: react_query_icon,
+				link: "/tools&libraries/react_query",
 			},
 		],
 	},

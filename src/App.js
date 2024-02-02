@@ -41,6 +41,7 @@ import USeMemo_Hook_main from "./components/React_Fundamentals/Performance/04_us
 import UseTransition_Hook_main from "./components/React_Fundamentals/Performance/05_useTransition_Hook/UseTransition_Hook_main";
 import TandL_Main from "./components/Tools&Libraries/TandL_Main";
 import Axios_Main from "./components/Tools&Libraries/axios/Axios_Main";
+import ReactQuery_main from "./components/Tools&Libraries/ReactQuery/ReactQuery_main";
 
 const App = () => {
 	return (
@@ -239,6 +240,12 @@ const App = () => {
 
 						{/* Axios Library */}
 						<Route path="/tools&libraries/axios" element={<Axios_Main />} />
+
+						{/* React Query Library */}
+						<Route
+							path="/tools&libraries/react_query"
+							element={<ReactQuery_main />}
+						/>
 					</Routes>
 				</div>
 

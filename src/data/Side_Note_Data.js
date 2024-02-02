@@ -103,3 +103,46 @@ export const Axios_Notes = [
 		],
 	},
 ];
+
+export const React_Query_notes = [
+	{
+		id: 1,
+		title: "About React Query",
+		pointers: [
+			"React Query is a State Management library in the React ecosystem that provides a set of tools for managing, caching, and synchronizing state for remote data fetching.",
+			"It Simplifies fetching, caching, and updating data in React Apps",
+			" It is designed to simplify the process of working with remote data",
+			"Its benefits includes automatic background refetching, caching and stale data management, error handling, and easy pagination and Infinte Scrolling",
+			"Compared to setting up requests with useEffect, React Query provides a more declarative and centraliszed approach.",
+			"It also reduces boilerplate codes and improve performance by minimizing the unnecessary re-renders and network requests",
+		],
+	},
+	{
+		id: 2,
+		title: "Key features and Concepts",
+		pointers: [
+			"Query Functionality : useQuery Hook",
+			"Mutation Functionality : useMutation Hook",
+			"Automatic Caching",
+			"Invalidation and Refetching with background polling, manual triggers, or when the data becomes stale.",
+			"Optimistic Updates",
+			"Integration with React Components",
+			"Comes with DevTools",
+			"Server-Side Rendering (SSR) Support",
+			"Reactivity",
+			"Version : V5",
+			"Read More : https://www.npmjs.com/package/react-query",
+		],
+	},
+	{
+		id: 3,
+		title: "Setting up React Query",
+		pointers: [
+			"Run => npm i @tanstack/react-query",
+			"After installing import the package @ main.jsx or index.jsx => import  { queryClient, QueryClientProvider } from '@tanstack/react-query'",
+			"Create QueryClient instance => const queryClient = new QueryClient( )",
+			"Then wrap the entire <App /> with <QueryClientProvider> wrapper.",
+			"Pass the queryClient as prop => client = { queryClient }",
+		],
+	},
+];
