@@ -42,6 +42,8 @@ import UseTransition_Hook_main from "./components/React_Fundamentals/Performance
 import TandL_Main from "./components/Tools&Libraries/TandL_Main";
 import Axios_Main from "./components/Tools&Libraries/axios/Axios_Main";
 import ReactQuery_main from "./components/Tools&Libraries/ReactQuery/ReactQuery_main";
+import Mini_Projects_Main from "./Mini_Projects/Mini_Projects_Main";
+import Unsplash_App from "./Mini_Projects/Project_1_Unsplash_Image_App/Unsplash_App";
 
 const App = () => {
 	return (
@@ -246,12 +248,21 @@ const App = () => {
 							path="/tools&libraries/react_query"
 							element={<ReactQuery_main />}
 						/>
+
+						{/* *********************               Mini Projects                 ******************************* */}
+						<Route path="/mini_projects" element={<Mini_Projects_Main />} />
+
+						{/* Unsplash App */}
+						<Route
+							path="/mini_projects/unsplash_app"
+							element={<Unsplash_App />}
+						/>
 					</Routes>
 				</div>
 
 				<ToastContainer
-					position="bottom-right"
-					autoClose={2000}
+					position="top-right"
+					autoClose={3000}
 					hideProgressBar={false}
 					newestOnTop={false}
 					closeOnClick

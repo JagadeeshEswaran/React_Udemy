@@ -27,17 +27,24 @@ body,
 .card,
 .navbar,
 .footer {
-	/* background: rgba(115, 198, 142, 0.64) !important;
-	border-radius: 16px !important;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
-	backdrop-filter: blur(10.1px) !important;
-	-webkit-backdrop-filter: blur(10.1px) !important; */
-
 	backdrop-filter: blur(16px) saturate(180%);
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
 	background-color: rgba(17, 25, 40, 0.75);
 	border-radius: 12px;
 	border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-full-body {
+	cursor: pointer;
+}
+
+.card-bottom-title:hover {
+	background: #ffffffa1;
+	color: rgb(61, 61, 61) !important;
+	font-weight: 600;
+	transition: 0.5s;
+
+	padding-bottom: 1rem;
 }
 
 .txtClr {
@@ -63,11 +70,42 @@ body,
 	background: lightseagreen;
 }
 
-.myIcon {
-	/* border: 1px dotted red;
-	color: aqua !important; */
-}
-
 .myIcon:hover {
 	color: aqua !important;
+}
+
+.theme-toggler:hover {
+	color: aqua;
+	transition: 0.6s;
+	animation: themeToggler 1.5s ease-in-out;
+	cursor: pointer;
+}
+
+@keyframes themeToggler {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.unsplash_main_section_dark {
+	background-color: rgba(17, 25, 40, 0.75);
+	color: #fff;
+	transition: 0.4s;
+}
+
+.unsplash_main_section_light {
+	background: #ffffff96;
+	color: #000;
+	transition: 0.4s;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background-color: rgba(17, 25, 40, 0.75);
+		color: #fff;
+		transition: 0.4s;
+	}
 }

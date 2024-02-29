@@ -3,7 +3,6 @@ import {
 	FaSquareXTwitter,
 	FaSquareInstagram,
 } from "react-icons/fa6";
-
 import react_query_icon from "../../assets/Tool&Libraries/react_query/react-query-icon.svg";
 
 export const Navbar_Data = [
@@ -148,7 +147,9 @@ export const Side_bar_Data = [
 	},
 	{
 		id: 5,
-		name: " ",
+		name: "React Mini Projects",
+		link: "/mini_projects",
+		section: "React_Mini_Projects",
 	},
 	{
 		id: 6,
@@ -400,5 +401,20 @@ export const Micro_App_Data = [
 		id: 13,
 		name: "Strapi Submenu App",
 		link: "/react_micro_apps/strapi_submenu_app",
+	},
+];
+
+export const Mini_Projects = [
+	{
+		id: 1,
+		name: "Unsplash App",
+		link: "/mini_projects/unsplash_app",
+		bg_img: "/unsplash_sample.png",
+	},
+	{
+		id: 2,
+		name: "Project 2",
+		link: "/mini_projects/project_2",
+		bg_img: "/unsplash_sample.png",
 	},
 ];
